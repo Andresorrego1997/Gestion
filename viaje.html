@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestión de tráfico</title>
+    <link rel="stylesheet" href="assets/css/estiloscam.css">
+</head>
+<body>
+
+    <header>
+        <div class="ancho">
+            <div class="logo">
+                <p><a href="pagina.html">Gestión de tráfico</a></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="1" href="pagina.html">Inicio</a></li>
+                <li><a id="1" href="#">Nosotros</a></li>
+                <li><a id="1" href="#">Servicios</a></li>
+                <li><a id="1" href="contacto.html">Contacto</a></li>
+                <?php if(!empty($user)): ?>
+                  <a href="pagina.html"></a>
+                  <a id="cerrar" href="logout.php">CERRAR SESIÓN</a>
+                  <?php
+            </ul>
+        </nav>
+
+    </header>
+    <br/><br/><br/><br/><br/><br/>
+    <a id="2" href="incidencias.html">Incidencias</a>
+    <a id="3" href="monitoreadas.html">Vias monitoreadas</a>
+    <a id="4" href="camaras.html">Cámaras</a>
+    <a id="5" href="viaje.html">Tu Viaje</a>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1atNJrI8ot9pDUa_cvSoqTpfndPgpHLG4" width="940" height="480"></iframe>
+</body>
+</html>

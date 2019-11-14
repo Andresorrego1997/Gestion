@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestión de tráfico</title>
+    <link rel="stylesheet" href="assets/css/estiloscam.css">
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="ancho">
+            <div class="logo">
+                <p><a href="pagina.html">Gestión de tráfico</a></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="1" href="pagina.html">Inicio</a></li>
+                <li><a id="1" href="#">Nosotros</a></li>
+                <li><a id="1" href="#">Servicios</a></li>
+                <li><a id="1" href="#">Contacto</a></li>
+                <?php if(!empty($user)): ?>
+                  <a href="pagina.html"></a>
+                  <a id="cerrar" href="logout.php">CERRAR SESIÓN</a>
+                  <?php
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="content">
+      <h5 class="contact">Contac <span>Us</span></h5>
+
+      <div class="contact-wrapper">
+        <div class="contact-form">
+          <h6>Contact Us</h6>
+          <form action="">
+            <p>
+                <label for="fullname">Nombre</label>
+                <input type="text" name="fullname" id="fullname">
+            </p>
+            <p>
+                <label>Coreo Electrónico</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label>Número de Contacto</label>
+                <input type="tel" name="phone">
+            </p>
+            <p>
+                <label>Asunto</label>
+                <input type="text" name="affair">
+            </p>
+            <p class="block">
+                <label>Message</label>
+                <textarea name="message" rows="3"></textarea>
+            </p>
+            <p class="block">
+                <button type="submit">Enviar</button>
+            </p>
+          </form>
+        </div>
+        <div class="contact-info">
+            <h7>Más Información</h7>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Universidad Católica Luis Amigó</li>
+                <li><i class="fas fa-phone"></i> (+57) 321 722 4828</li>
+                <li><i class="fas fa-envelope-open-text"></i> contact@amigo.edu.co</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

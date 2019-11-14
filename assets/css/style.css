@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background: #242424;
+}
+
+input[type="text"], input[type="password"]{
+  outline: none;
+  padding: 20px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #eee;
+  margin: 20px auto;
+}
+
+input[type="submit"]{
+  padding: 12px;
+  color: #fff;
+  font-size: 17px;
+  background: #B70E21;
+  width: 320px;
+  margin: 20px auto;
+  margin-top: 15px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  background-color: #242424;
+  border: 1px solid #fff;
+  transition: background-color 1s ease-out;
+}
+
+header{
+  border-bottom: 2px solid #eee;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1{
+  color: #fff;
+  margin: 30px 0 10px 0;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  font-family: Mansalva;
+  margin-top: 140px;
+  font-size: 50px;
+}
+h2{
+  margin-top: 80px;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 480px;
+  margin-bottom: 50px;
+}
+h3{
+  color: #fff;
+  font-size: 40px;
+  padding: 20px;
+}
+h4{
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sentence{
+     color: #fff;
+     font-size: 30px;
+     text-align: justify;
+}
+/*Horizontal Sliding*/
+.slidingHorizontal{
+	display: inline;
+	text-indent: 8px;
+}
+.slidingHorizontal span{
+	animation: leftToRight 12.5s linear infinite 0s;
+	-ms-animation: leftToRight 12.5s linear infinite 0s;
+	-webkit-animation: leftToRight 12.5s linear infinite 0s;
+	color: #B70E21;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.slidingHorizontal span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.slidingHorizontal span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingHorizontal span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.slidingHorizontal span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+
+/*leftToRight Animation*/
+@-moz-keyframes leftToRight{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateX(-50px); }
+	10% { opacity: 1; -moz-transform: translateX(0px); }
+	25% { opacity: 1; -moz-transform: translateX(0px); }
+	30% { opacity: 0; -moz-transform: translateX(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes leftToRight{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateX(-50px); }
+	10% { opacity: 1; -webkit-transform: translateX(0px); }
+	25% { opacity: 1; -webkit-transform: translateX(0px); }
+	30% { opacity: 0; -webkit-transform: translateX(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes leftToRight{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateX(-50px); }
+	10% { opacity: 1; -ms-transform: translateX(0px); }
+	25% { opacity: 1; -ms-transform: translateX(0px); }
+	30% { opacity: 0; -ms-transform: translateX(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+body [id="login"]{
+  color: #fff;
+  background: #B70E21;
+  font-size: 17px;
+  text-decoration: none;
+  border: 1px solid #B70E21;
+  padding: 10px 20px 10px 20px;
+  transition: 0.5s;
+}
+body [id="login"]:hover{
+  background: #242424;
+  border: 1px solid #fff;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 1s ease-out;
+
+}
+body [id="signup"]{
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 20px 10px 20px;
+  margin-left: 15px;
+  transition: background-color 1s ease-out;
+}
+body [id="signup"]:hover{
+  background: #B70E21;
+  border: 1px solid #B70E21;
+  outline: none;
+  text-decoration: none;
+}
